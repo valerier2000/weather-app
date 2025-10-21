@@ -1,10 +1,15 @@
 import "./CityCard.scss";
+import type { CityWeather } from "../../types";
 
-export default function CityCard() {
+type CityCardProps = {
+  city: CityWeather;
+};
+
+export default function CityCard({ city }: CityCardProps) {
   return (
     <div className="city-card">
-      <h3>Katowice</h3>
-      <p>20°C</p>
+      <h3>{city.name}</h3>
+      <p>{city.temperature}°C</p>
     </div>
   );
 }

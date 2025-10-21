@@ -1,13 +1,17 @@
 import CityCard from "./CityCard";
 import "./CityList.scss";
+import type { CityWeather } from "../../types";
 
-export default function CityList() {
+interface CityListProps {
+  cities: CityWeather[];
+}
+
+export default function CityList({ cities }: CityListProps) {
   return (
     <div className="city-grid">
-      <CityCard />
-      <CityCard />
-      <CityCard />
-      <CityCard />
+      {cities.map((city) => (
+        <CityCard key={city.id} city={city} />
+      ))}
     </div>
   );
 }
