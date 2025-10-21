@@ -7,6 +7,13 @@
 :root {
   --bg: #14213d;
   --text: #eee;
+  --text-muted: rgba(255, 255, 255, 0.5);
+
+  --surface: rgba(255, 255, 255, 0.06);
+  --surface-strong: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.2);
+  --accent: #7b5cf8;
 }
 
 body {

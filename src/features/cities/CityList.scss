@@ -1,0 +1,9 @@
+.city-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  > :first-child {
+    grid-column: 1 / -1;
+  }
+}

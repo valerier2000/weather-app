@@ -3,7 +3,10 @@ import "./CityList.scss";
 
 export default function CityList() {
   return (
-    <div>
+    <div className="city-grid">
+      <CityCard />
+      <CityCard />
+      <CityCard />
       <CityCard />
     </div>
   );
