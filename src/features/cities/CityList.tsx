@@ -1,5 +1,10 @@
+import CityCard from "./CityCard";
 import "./CityList.scss";
 
 export default function CityList() {
-  return <div>CityList</div>;
+  return (
+    <div>
+      <CityCard />
+    </div>
+  );
 }

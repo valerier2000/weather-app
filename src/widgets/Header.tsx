@@ -2,8 +2,9 @@ import "./Header.scss";
 
 export default function Header() {
   return (
-    <div>
+    <div className="header">
       <h1>Weather App</h1>
+      <h2>Search...</h2>
     </div>
   );
 }
